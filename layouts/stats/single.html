@@ -1,0 +1,181 @@
+{{ define "main" }}
+<div class="container py-4">
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ "/" | relURL }}">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ "/stats/" | relURL }}">Stats</a></li>
+      <li class="breadcrumb-item active">{{ .Title }}</li>
+    </ol>
+  </nav>
+
+  <div class="page-header mb-4">
+    <h1><i class="bi bi-graph-up"></i> {{ .Title }}</h1>
+    <p class="text-muted">{{ .Description }}</p>
+  </div>
+
+  {{ if eq .File.BaseFileName "season-stats" }}
+    {{ with .Site.Data.season_stats }}
+    <p class="text-muted mb-3">Season: <strong>{{ $.Site.Params.season }}</strong></p>
+
+    <!-- Scoring Leaders -->
+    <section class="mb-5">
+      <h2 class="section-title mb-3"><i class="bi bi-person-lines-fill"></i> Scoring Leaders</h2>
+      <div class="table-responsive">
+        <table class="table table-hover stats-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Team</th>
+              <th class="text-center">GP</th>
+              <th class="text-center">G</th>
+              <th class="text-center">A</th>
+              <th class="text-center">PTS</th>
+              <th class="text-center">PTS/G</th>
+              <th class="text-center">PIM</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range .players }}
+            <tr>
+              <td class="text-muted">{{ .rank }}</td>
+              <td class="fw-medium">{{ .name }}</td>
+              <td class="text-muted small">{{ .team }}</td>
+              <td class="text-center">{{ .games_played }}</td>
+              <td class="text-center">{{ .goals }}</td>
+              <td class="text-center">{{ .assists }}</td>
+              <td class="text-center fw-bold points-cell">{{ .points }}</td>
+              <td class="text-center text-muted small">{{ .points_per_game }}</td>
+              <td class="text-center text-muted">{{ .penalty_minutes }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Team Stats -->
+    {{ with .team_stats }}
+    <section class="mb-5">
+      <h2 class="section-title mb-3"><i class="bi bi-people"></i> Team Totals</h2>
+      <div class="table-responsive">
+        <table class="table table-hover stats-table">
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th class="text-center">GP</th>
+              <th class="text-center">G</th>
+              <th class="text-center">A</th>
+              <th class="text-center">PTS</th>
+              <th class="text-center">PIM</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range . }}
+            <tr>
+              <td class="fw-medium">{{ .team }}</td>
+              <td class="text-center">{{ .games_played }}</td>
+              <td class="text-center">{{ .goals }}</td>
+              <td class="text-center">{{ .assists }}</td>
+              <td class="text-center fw-bold">{{ .points }}</td>
+              <td class="text-center text-muted">{{ .penalty_minutes }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {{ end }}
+
+    {{ else }}
+    <div class="alert alert-info">
+      <i class="bi bi-info-circle"></i> Season stats not yet available. Run the build script to populate from the database.
+    </div>
+    {{ end }}
+
+  {{ else if eq .File.BaseFileName "alltime-stats" }}
+    {{ with .Site.Data.alltime_stats }}
+
+    <!-- All-Time Scoring -->
+    <section class="mb-5">
+      <h2 class="section-title mb-3"><i class="bi bi-award"></i> All-Time Scoring Leaders</h2>
+      <div class="table-responsive">
+        <table class="table table-hover stats-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th class="text-center">Seasons</th>
+              <th class="text-center">GP</th>
+              <th class="text-center">G</th>
+              <th class="text-center">A</th>
+              <th class="text-center">PTS</th>
+              <th class="text-center">PIM</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range .players }}
+            <tr>
+              <td class="text-muted">{{ .rank }}</td>
+              <td class="fw-medium">{{ .name }}</td>
+              <td class="text-center text-muted small">{{ .seasons }}</td>
+              <td class="text-center">{{ .games_played }}</td>
+              <td class="text-center">{{ .goals }}</td>
+              <td class="text-center">{{ .assists }}</td>
+              <td class="text-center fw-bold points-cell">{{ .points }}</td>
+              <td class="text-center text-muted">{{ .penalty_minutes }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Season-by-Season Records -->
+    {{ with .season_records }}
+    <section class="mb-5">
+      <h2 class="section-title mb-3"><i class="bi bi-calendar3-range"></i> Season Records</h2>
+      <div class="table-responsive">
+        <table class="table table-hover stats-table">
+          <thead>
+            <tr>
+              <th>Season</th>
+              <th>Champion</th>
+              <th class="text-center">Teams</th>
+              <th class="text-center">Games Played</th>
+              <th>Top Scorer</th>
+              <th class="text-center">PTS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range . }}
+            <tr>
+              <td class="fw-medium">{{ .season }}</td>
+              <td>
+                {{ if .champion }}
+                  <i class="bi bi-trophy-fill text-warning"></i> {{ .champion }}
+                {{ else }}
+                  <span class="text-muted">In Progress</span>
+                {{ end }}
+              </td>
+              <td class="text-center text-muted">{{ .teams }}</td>
+              <td class="text-center text-muted">{{ .games_played }}</td>
+              <td>{{ .top_scorer }}</td>
+              <td class="text-center fw-bold">{{ .top_scorer_pts }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {{ end }}
+
+    {{ else }}
+    <div class="alert alert-info">
+      <i class="bi bi-info-circle"></i> All-time stats not yet available. Run the build script to populate from the database.
+    </div>
+    {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

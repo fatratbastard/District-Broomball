@@ -1,0 +1,230 @@
+{
+  "players": [
+    {
+      "rank": 1,
+      "name": "Marcus Thibodeau",
+      "seasons": 2,
+      "games_played": 16,
+      "goals": 24,
+      "assists": 10,
+      "points": 34,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 2,
+      "name": "Sarah Kowalski",
+      "seasons": 2,
+      "games_played": 16,
+      "goals": 17,
+      "assists": 17,
+      "points": 34,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 3,
+      "name": "Jordan Okonkwo",
+      "seasons": 2,
+      "games_played": 16,
+      "goals": 12,
+      "assists": 14,
+      "points": 26,
+      "penalty_minutes": 8
+    },
+    {
+      "rank": 4,
+      "name": "Nadia Volkov",
+      "seasons": 2,
+      "games_played": 15,
+      "goals": 16,
+      "assists": 9,
+      "points": 25,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 5,
+      "name": "Priya Mehta",
+      "seasons": 2,
+      "games_played": 13,
+      "goals": 14,
+      "assists": 7,
+      "points": 21,
+      "penalty_minutes": 4
+    },
+    {
+      "rank": 6,
+      "name": "Robin Chaudhary",
+      "seasons": 2,
+      "games_played": 11,
+      "goals": 12,
+      "assists": 9,
+      "points": 21,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 7,
+      "name": "Quinn Delacroix",
+      "seasons": 2,
+      "games_played": 11,
+      "goals": 11,
+      "assists": 10,
+      "points": 21,
+      "penalty_minutes": 4
+    },
+    {
+      "rank": 8,
+      "name": "Chris Watanabe",
+      "seasons": 2,
+      "games_played": 12,
+      "goals": 9,
+      "assists": 10,
+      "points": 19,
+      "penalty_minutes": 6
+    },
+    {
+      "rank": 9,
+      "name": "Sasha Petrov",
+      "seasons": 2,
+      "games_played": 14,
+      "goals": 12,
+      "assists": 5,
+      "points": 17,
+      "penalty_minutes": 4
+    },
+    {
+      "rank": 10,
+      "name": "Tyler Bergstrom",
+      "seasons": 2,
+      "games_played": 12,
+      "goals": 10,
+      "assists": 6,
+      "points": 16,
+      "penalty_minutes": 4
+    },
+    {
+      "rank": 11,
+      "name": "Sam Oduya",
+      "seasons": 2,
+      "games_played": 12,
+      "goals": 10,
+      "assists": 6,
+      "points": 16,
+      "penalty_minutes": 6
+    },
+    {
+      "rank": 12,
+      "name": "Alex Bourassa",
+      "seasons": 2,
+      "games_played": 9,
+      "goals": 7,
+      "assists": 9,
+      "points": 16,
+      "penalty_minutes": 4
+    },
+    {
+      "rank": 13,
+      "name": "Reese Castellano",
+      "seasons": 2,
+      "games_played": 10,
+      "goals": 8,
+      "assists": 4,
+      "points": 12,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 14,
+      "name": "Parker Hristov",
+      "seasons": 1,
+      "games_played": 7,
+      "goals": 7,
+      "assists": 5,
+      "points": 12,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 15,
+      "name": "Drew Macdonald",
+      "seasons": 2,
+      "games_played": 9,
+      "goals": 9,
+      "assists": 2,
+      "points": 11,
+      "penalty_minutes": 0
+    },
+    {
+      "rank": 16,
+      "name": "Jamie Tremblay",
+      "seasons": 2,
+      "games_played": 11,
+      "goals": 8,
+      "assists": 3,
+      "points": 11,
+      "penalty_minutes": 0
+    },
+    {
+      "rank": 17,
+      "name": "Casey Fontaine",
+      "seasons": 1,
+      "games_played": 7,
+      "goals": 3,
+      "assists": 7,
+      "points": 10,
+      "penalty_minutes": 0
+    },
+    {
+      "rank": 18,
+      "name": "Taylor Novak",
+      "seasons": 1,
+      "games_played": 6,
+      "goals": 5,
+      "assists": 2,
+      "points": 7,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 19,
+      "name": "Devon Lafleur",
+      "seasons": 2,
+      "games_played": 8,
+      "goals": 4,
+      "assists": 3,
+      "points": 7,
+      "penalty_minutes": 2
+    },
+    {
+      "rank": 20,
+      "name": "Logan Beaumont",
+      "seasons": 1,
+      "games_played": 7,
+      "goals": 3,
+      "assists": 4,
+      "points": 7,
+      "penalty_minutes": 2
+    }
+  ],
+  "season_records": [
+    {
+      "season": "Winter 2025-2026",
+      "champion": null,
+      "teams": 5,
+      "games_played": 20,
+      "top_scorer": "Marcus Thibodeau",
+      "top_scorer_pts": 24
+    },
+    {
+      "season": "Winter 2024-2025",
+      "champion": "Polar Bears",
+      "teams": 5,
+      "games_played": 18,
+      "top_scorer": "",
+      "top_scorer_pts": 0
+    },
+    {
+      "season": "Winter 2023-2024",
+      "champion": "Polar Bears",
+      "teams": 5,
+      "games_played": 17,
+      "top_scorer": "Robin Chaudhary",
+      "top_scorer_pts": 15
+    }
+  ]
+}

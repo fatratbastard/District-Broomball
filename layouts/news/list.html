@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="container py-4">
+  <div class="page-header mb-4">
+    <h1><i class="bi bi-newspaper"></i> News</h1>
+    <p class="text-muted">{{ .Description }}</p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      {{ if .Pages }}
+        {{ range .Pages }}
+        <article class="news-card mb-4">
+          <div class="news-card-date">
+            <i class="bi bi-calendar3"></i>
+            {{ .Date.Format "January 2, 2006" }}
+            {{ with .Params.author }}
+            &bull; <span class="text-muted">{{ . }}</span>
+            {{ end }}
+          </div>
+          <h2 class="news-card-title h4">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          {{ with .Params.summary }}
+          <p class="news-card-summary">{{ . }}</p>
+          {{ else }}
+          <p class="news-card-summary">{{ .Summary | plainify | truncate 250 }}</p>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="btn btn-sm btn-primary">Read More</a>
+        </article>
+        {{ end }}
+      {{ else }}
+        <div class="alert alert-info">
+          <i class="bi bi-info-circle"></i>
+          No news articles yet. Run the build script to populate content from the database.
+        </div>
+      {{ end }}
+    </div>
+    <div class="col-lg-4">
+      <div class="sidebar-widget">
+        <div class="widget-header">
+          <h3><i class="bi bi-clock-history"></i> Recent Articles</h3>
+        </div>
+        {{ range first 10 .Pages }}
+        <div class="recent-item">
+          <a href="{{ .RelPermalink }}" class="recent-link">{{ .Title }}</a>
+          <div class="text-muted small">{{ .Date.Format "Jan 2, 2006" }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

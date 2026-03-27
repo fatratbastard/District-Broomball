@@ -1,0 +1,299 @@
+/* =========================================================
+   District Broomball League — Custom Stylesheet
+   ========================================================= */
+
+:root {
+  --league-navy:    #0d1f3c;
+  --league-blue:    #1a4480;
+  --league-ice:     #5bc8f5;
+  --league-white:   #f8faff;
+  --league-accent:  #e8a020;
+  --text-primary:   #1a1a2e;
+  --text-muted:     #6c757d;
+  --border-color:   #dee2e6;
+  --card-shadow:    0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ---- Base ---- */
+body {
+  background-color: var(--league-white);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+a {
+  color: var(--league-blue);
+  text-decoration: none;
+}
+a:hover { color: var(--league-ice); text-decoration: underline; }
+
+/* ---- Header / Navbar ---- */
+.site-header {
+  background: linear-gradient(135deg, var(--league-navy) 0%, var(--league-blue) 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .navbar-brand {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.site-header .navbar-brand:hover { color: var(--league-ice); text-decoration: none; }
+.site-header .navbar-brand .bi { margin-right: 6px; color: var(--league-ice); }
+
+.site-header .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: #fff !important;
+  background: rgba(255,255,255,0.15);
+  text-decoration: none;
+}
+
+.site-header .dropdown-menu {
+  background: var(--league-navy);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-top: 2px solid var(--league-ice);
+}
+.site-header .dropdown-item {
+  color: rgba(255,255,255,0.85);
+  padding: 0.5rem 1.2rem;
+}
+.site-header .dropdown-item:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.navbar-toggler { border-color: rgba(255,255,255,0.4); }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---- Hero Banner ---- */
+.hero-banner {
+  background: linear-gradient(135deg, var(--league-navy) 0%, #1e3a6e 50%, #0d4f8e 100%);
+  color: #fff;
+  padding: 3.5rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-content { position: relative; }
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.hero-content h1 .bi { color: var(--league-ice); margin-right: 10px; }
+.hero-content p {
+  font-size: 1.1rem;
+  color: var(--league-ice);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ---- Page Header ---- */
+.page-header {
+  border-bottom: 3px solid var(--league-ice);
+  padding-bottom: 1rem;
+}
+.page-header h1 .bi { color: var(--league-blue); margin-right: 8px; }
+
+/* ---- Section Title ---- */
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--league-navy);
+  border-left: 4px solid var(--league-ice);
+  padding-left: 0.75rem;
+}
+
+/* ---- News Cards ---- */
+.news-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--league-ice);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.2s, border-left-color 0.2s;
+}
+.news-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border-left-color: var(--league-accent);
+}
+.news-card-date {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+.news-card-date .bi { margin-right: 4px; }
+.news-card-title a {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.news-card-title a:hover { color: var(--league-blue); text-decoration: none; }
+.news-card-summary { color: #444; margin: 0.5rem 0 0.75rem; line-height: 1.6; }
+
+/* ---- Article ---- */
+.article-header { border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+.article-title { font-weight: 800; color: var(--league-navy); }
+.article-meta { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; }
+.article-meta .bi { margin-right: 4px; }
+.article-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+.article-body p { margin-bottom: 1.2rem; }
+
+/* ---- Sidebar Widgets ---- */
+.sidebar-widget {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+.widget-header {
+  background: var(--league-navy);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.widget-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+.widget-header h3 .bi { margin-right: 6px; color: var(--league-ice); }
+.widget-link {
+  color: var(--league-ice);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.widget-link:hover { color: #fff; text-decoration: underline; }
+
+.sidebar-widget .table { margin: 0; font-size: 0.85rem; }
+.sidebar-widget .table thead th {
+  background: rgba(13, 31, 60, 0.05);
+  border-bottom: 2px solid var(--league-ice);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--league-navy);
+}
+
+/* ---- Game Items (sidebar) ---- */
+.game-item {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.game-item:last-child { border-bottom: none; }
+.game-date { font-size: 0.78rem; color: var(--text-muted); }
+.game-matchup { font-weight: 600; font-size: 0.88rem; }
+
+/* ---- Recent Items ---- */
+.recent-item {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.recent-item:last-child { border-bottom: none; }
+.recent-item.active { background: rgba(91, 200, 245, 0.1); }
+.recent-link { font-size: 0.88rem; color: var(--text-primary); }
+.recent-link:hover { color: var(--league-blue); }
+
+/* ---- Tables ---- */
+.standings-table th,
+.standings-table-full th,
+.results-table th,
+.schedule-table th,
+.stats-table th {
+  background: var(--league-navy);
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+.standings-table-full tbody tr:hover,
+.results-table tbody tr:hover,
+.schedule-table tbody tr:hover,
+.stats-table tbody tr:hover {
+  background: rgba(91, 200, 245, 0.08);
+}
+.points-cell { color: var(--league-blue); }
+
+/* ---- Info Cards ---- */
+.info-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--card-shadow);
+}
+.info-link { color: var(--text-primary); font-weight: 700; }
+.info-link:hover { color: var(--league-blue); }
+
+/* ---- Stats Nav Cards ---- */
+.stats-nav-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.2s;
+  box-shadow: var(--card-shadow);
+  color: var(--text-primary) !important;
+}
+.stats-nav-card:hover {
+  border-color: var(--league-ice);
+  box-shadow: 0 4px 16px rgba(91, 200, 245, 0.25);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.stats-nav-icon {
+  font-size: 2.5rem;
+  color: var(--league-blue);
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  background: var(--league-navy);
+  color: rgba(255,255,255,0.7);
+  padding: 2.5rem 0 1.5rem;
+}
+.site-footer h5 { color: #fff; font-weight: 600; margin-bottom: 1rem; }
+.site-footer h5 .bi { color: var(--league-ice); margin-right: 6px; }
+.footer-link { color: rgba(255,255,255,0.65); font-size: 0.9rem; display: block; margin-bottom: 0.3rem; }
+.footer-link:hover { color: var(--league-ice); text-decoration: none; }
+.footer-divider { border-color: rgba(255,255,255,0.1); }
+
+/* ---- Main content spacing ---- */
+.main-content { min-height: calc(100vh - 250px); }
+
+/* ---- Breadcrumb ---- */
+.breadcrumb { font-size: 0.85rem; }
+.breadcrumb-item a { color: var(--league-blue); }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-banner { padding: 2rem 0; }
+  .site-header .dropdown-menu { border-top: none; }
+}

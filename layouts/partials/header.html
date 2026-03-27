@@ -1,0 +1,37 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="{{ "/" | relURL }}">
+        <i class="bi bi-snow2"></i>
+        {{ .Site.Title }}
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle {{ if $.IsMenuCurrent "main" . }}active{{ end }}"
+                 href="{{ .URL }}" role="button" data-bs-toggle="dropdown">
+                {{ .Name }}
+              </a>
+              <ul class="dropdown-menu">
+                {{ range .Children }}
+                <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}"
+                 href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,26 @@
+<footer class="site-footer mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5><i class="bi bi-snow2"></i> {{ .Site.Title }}</h5>
+        <p class="text-muted small">{{ .Site.Params.description }}</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          {{ range .Site.Menus.main }}
+          {{ if not .HasChildren }}
+          <li><a href="{{ .URL }}" class="footer-link">{{ .Name }}</a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Current Season</h5>
+        <p class="text-muted small">{{ .Site.Params.season }}</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="text-center text-muted small">&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+  </div>
+</footer>

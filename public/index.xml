@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on District Broomball League</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Home on District Broomball League</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About the League</title>
+      <link>//localhost:1313/info/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/about/</guid>
+      <description>History and overview of the District Broomball League.</description>
+    </item>
+    <item>
+      <title>League Rules</title>
+      <link>//localhost:1313/info/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/rules/</guid>
+      <description>Official rules and regulations for the District Broomball League.</description>
+    </item>
+    <item>
+      <title>Season Schedule &amp; Format</title>
+      <link>//localhost:1313/info/schedule-format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/schedule-format/</guid>
+      <description>How the season schedule and playoffs work.</description>
+    </item>
+    <item>
+      <title>Registration &amp; Fees</title>
+      <link>//localhost:1313/info/registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/registration/</guid>
+      <description>How to register and what the seasonal fees cover.</description>
+    </item>
+    <item>
+      <title>Contact Us</title>
+      <link>//localhost:1313/info/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/contact/</guid>
+      <description>How to reach the league organizers.</description>
+    </item>
+    <item>
+      <title>Polar Bears Lead the Pack with Dominant Season</title>
+      <link>//localhost:1313/news/polar-bears-lead-the-pack/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/polar-bears-lead-the-pack/</guid>
+      <description>After twenty games, the Polar Bears sit atop the standings with an impressive record.</description>
+    </item>
+    <item>
+      <title>Ice Storm Riding a Five-Game Winning Streak</title>
+      <link>//localhost:1313/news/ice-storm-winning-streak/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/ice-storm-winning-streak/</guid>
+      <description>The Ice Storm have rattled off five consecutive wins to climb into playoff position.</description>
+    </item>
+    <item>
+      <title>Winter 2025-2026 Season Preview</title>
+      <link>//localhost:1313/news/winter-2025-2026-preview/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/winter-2025-2026-preview/</guid>
+      <description>All five teams are ready for a competitive season as the puck drops on Winter 2025-2026.</description>
+    </item>
+    <item>
+      <title>New This Season: Updated Penalty Rules</title>
+      <link>//localhost:1313/news/updated-penalty-rules-2025/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/updated-penalty-rules-2025/</guid>
+      <description>The league has updated several penalty guidelines ahead of the Winter 2025-2026 season.</description>
+    </item>
+    <item>
+      <title>Frozen Few Claim Winter 2024-2025 Championship</title>
+      <link>//localhost:1313/news/frozen-few-champions-2025/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/frozen-few-champions-2025/</guid>
+      <description>The Frozen Few edged the Polar Bears 3-2 in overtime to win the league championship.</description>
+    </item>
+    <item>
+      <title>All-Time Statistics</title>
+      <link>//localhost:1313/stats/alltime-stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/stats/alltime-stats/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Season Statistics</title>
+      <link>//localhost:1313/stats/season-stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/stats/season-stats/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

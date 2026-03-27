@@ -1,0 +1,47 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "District Broomball League"
+
+[params]
+  description = "Official website of the District Broomball League"
+  season = "Winter 2025-2026"
+  leagueName = "District Broomball League"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 2
+  [[menu.main]]
+    identifier = "season"
+    name = "Current Season"
+    url = "/season/"
+    weight = 3
+  [[menu.main]]
+    identifier = "stats"
+    name = "Stats"
+    url = "/stats/"
+    weight = 4
+    [[menu.main]]
+      identifier = "stats-season"
+      name = "Season Stats"
+      url = "/stats/season-stats/"
+      weight = 1
+      parent = "stats"
+    [[menu.main]]
+      identifier = "stats-alltime"
+      name = "All-Time Stats"
+      url = "/stats/alltime-stats/"
+      weight = 2
+      parent = "stats"
+  [[menu.main]]
+    identifier = "info"
+    name = "Info"
+    url = "/info/"
+    weight = 5

@@ -1,0 +1,128 @@
+{{ define "main" }}
+<div class="container py-4">
+  <div class="page-header mb-4">
+    <h1><i class="bi bi-calendar3-range"></i> Current Season</h1>
+    <p class="text-muted">{{ $.Site.Params.season }}</p>
+  </div>
+
+  {{ with .Site.Data.standings }}
+  <!-- Standings -->
+  <section class="mb-5">
+    <h2 class="section-title mb-3"><i class="bi bi-trophy"></i> Standings</h2>
+    <div class="table-responsive">
+      <table class="table table-hover standings-table-full">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Team</th>
+            <th class="text-center">GP</th>
+            <th class="text-center">W</th>
+            <th class="text-center">L</th>
+            <th class="text-center">T</th>
+            <th class="text-center">GF</th>
+            <th class="text-center">GA</th>
+            <th class="text-center">DIFF</th>
+            <th class="text-center">PTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $i, $team := .teams }}
+          <tr>
+            <td class="text-muted">{{ add $i 1 }}</td>
+            <td class="fw-medium">{{ $team.name }}</td>
+            <td class="text-center">{{ $team.games_played }}</td>
+            <td class="text-center">{{ $team.wins }}</td>
+            <td class="text-center">{{ $team.losses }}</td>
+            <td class="text-center">{{ $team.ties }}</td>
+            <td class="text-center">{{ $team.goals_for }}</td>
+            <td class="text-center">{{ $team.goals_against }}</td>
+            <td class="text-center {{ if gt $team.goal_diff 0 }}text-success{{ else if lt $team.goal_diff 0 }}text-danger{{ end }}">
+              {{ if gt $team.goal_diff 0 }}+{{ end }}{{ $team.goal_diff }}
+            </td>
+            <td class="text-center fw-bold points-cell">{{ $team.points }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-muted small mt-1">W=2pts &bull; T=1pt &bull; L=0pts</p>
+  </section>
+  {{ end }}
+
+  {{ with .Site.Data.schedule }}
+  <!-- Schedule & Results -->
+  <div class="row">
+
+    <!-- Results -->
+    <div class="col-lg-6 mb-4">
+      <h2 class="section-title mb-3"><i class="bi bi-check-circle"></i> Recent Results</h2>
+      {{ $completed := where .games "status" "completed" }}
+      {{ if $completed }}
+      <div class="table-responsive">
+        <table class="table table-sm results-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Matchup</th>
+              <th class="text-center">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range last 10 $completed }}
+            <tr>
+              <td class="text-muted small">{{ .date }}</td>
+              <td class="small">{{ .away_team }} @ {{ .home_team }}</td>
+              <td class="text-center fw-bold small">{{ .away_score }}–{{ .home_score }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      {{ else }}
+        <p class="text-muted">No results yet.</p>
+      {{ end }}
+    </div>
+
+    <!-- Upcoming Schedule -->
+    <div class="col-lg-6 mb-4">
+      <h2 class="section-title mb-3"><i class="bi bi-calendar-event"></i> Upcoming Games</h2>
+      {{ $upcoming := where .games "status" "scheduled" }}
+      {{ if $upcoming }}
+      <div class="table-responsive">
+        <table class="table table-sm schedule-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Matchup</th>
+              <th>Time</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $upcoming }}
+            <tr>
+              <td class="small">{{ .date }}</td>
+              <td class="small fw-medium">{{ .away_team }} @ {{ .home_team }}</td>
+              <td class="small text-muted">{{ .time }}</td>
+              <td class="small text-muted">{{ .location }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      {{ else }}
+        <p class="text-muted">No upcoming games scheduled.</p>
+      {{ end }}
+    </div>
+
+  </div>
+  {{ end }}
+
+  {{ if not .Site.Data.standings }}
+  <div class="alert alert-info">
+    <i class="bi bi-info-circle"></i>
+    Season data not yet loaded. Run the build script to populate from the database.
+  </div>
+  {{ end }}
+</div>
+{{ end }}

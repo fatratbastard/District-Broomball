@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container py-4">
+  <div class="page-header mb-4">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="text-muted">{{ . }}</p>{{ end }}
+  </div>
+  {{ range .Pages }}
+  <div class="mb-3">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="text-muted small">{{ .Date.Format "January 2, 2006" }}</p>
+    <p>{{ .Summary | plainify | truncate 200 }}</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

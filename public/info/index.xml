@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>League Information on District Broomball League</title>
+    <link>//localhost:1313/info/</link>
+    <description>Recent content in League Information on District Broomball League</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/info/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About the League</title>
+      <link>//localhost:1313/info/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/about/</guid>
+      <description>History and overview of the District Broomball League.</description>
+    </item>
+    <item>
+      <title>League Rules</title>
+      <link>//localhost:1313/info/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/rules/</guid>
+      <description>Official rules and regulations for the District Broomball League.</description>
+    </item>
+    <item>
+      <title>Season Schedule &amp; Format</title>
+      <link>//localhost:1313/info/schedule-format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/schedule-format/</guid>
+      <description>How the season schedule and playoffs work.</description>
+    </item>
+    <item>
+      <title>Registration &amp; Fees</title>
+      <link>//localhost:1313/info/registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/registration/</guid>
+      <description>How to register and what the seasonal fees cover.</description>
+    </item>
+    <item>
+      <title>Contact Us</title>
+      <link>//localhost:1313/info/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/info/contact/</guid>
+      <description>How to reach the league organizers.</description>
+    </item>
+  </channel>
+</rss>
