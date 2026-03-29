@@ -1,7 +1,7 @@
 ---
 title: Week Two Game Recaps
 date: 2025-03-23
-summary: Recap of all of the action from Week 1 of the 2026 Spring Season.
+summary: Recap of all of the action from Week 2 of the 2026 Spring Season.
 author: League Commissioner
 ---
 **Game 1: I Choose You, Charizard 3, Shadow Kirby's Dream Land 2**
