@@ -9,7 +9,7 @@ All games are played under the official Broomball Canada rules with the followin
 
 ## Game Format
 
-- **Game Duration:** Two 25-minute halves with a 5-minute intermission
+- **Game Duration:** Two 20-minute halves with a 2-minute intermission
 - **Overtime:** 5-minute sudden-death overtime in regular season; full 10-minute periods in playoffs until a goal is scored
 - **Team Size:** 5 skaters + 1 goalie; minimum 4 skaters to start a game
 
