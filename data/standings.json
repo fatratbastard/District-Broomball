@@ -14,19 +14,6 @@
       "goal_diff": 5
     },
     {
-      "id": 2,
-      "name": "I Choose You, Char-izard",
-      "short_name": "YELLOW",
-      "wins": 1,
-      "losses": 2,
-      "ties": 0,
-      "points": 2,
-      "games_played": 3,
-      "goals_for": 5,
-      "goals_against": 9,
-      "goal_diff": -4
-    },
-    {
       "id": 3,
       "name": "Pink Zamboni Club",
       "short_name": "PINK",
@@ -38,6 +25,19 @@
       "goals_for": 6,
       "goals_against": 4,
       "goal_diff": 2
+    },
+    {
+      "id": 2,
+      "name": "I Choose You, Char-izard",
+      "short_name": "YELLOW",
+      "wins": 1,
+      "losses": 2,
+      "ties": 0,
+      "points": 2,
+      "games_played": 3,
+      "goals_for": 5,
+      "goals_against": 9,
+      "goal_diff": -4
     },
     {
       "id": 4,
