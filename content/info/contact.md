@@ -5,13 +5,13 @@ summary: How to reach the league organizers.
 ---
 ## Contact Information
 
-**League Commissioner:** Alex Pemberton
-**Email:** league@districtbroomball.ca
+**League Commissioner:** Brett Schneider
+**Email:** districtbroomball@gmail.com
 
 **Primary Rink:**
-Rideau Rink
-123 Rideau Street
-Ottawa, ON K1N 5Y1
+Tucker Road Ice Rink
+1770 Tucker Road
+Fort Washington, MD 20744
 
 ## Game Night Questions
 
@@ -21,8 +21,8 @@ For questions on game night — including score disputes, postponements, or equi
 
 Follow us online for live score updates, news, and announcements:
 
-- Instagram: @districtbroomball
-- Facebook: facebook.com/districtbroomball
+- Instagram: @dcbroomball
+- Facebook: [District Broomball](https://www.facebook.com/groups/capitolbroomball/)
 
 ## Mailing List
 
