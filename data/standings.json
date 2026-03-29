@@ -4,53 +4,53 @@
       "id": 1,
       "name": "Don't Stan So Klos To Me",
       "short_name": "BLUE",
-      "wins": 8,
+      "wins": 2,
       "losses": 0,
       "ties": 1,
-      "points": 17,
+      "points": 5,
       "games_played": 3,
-      "goals_for": 39,
-      "goals_against": 17,
-      "goal_diff": 22
+      "goals_for": 9,
+      "goals_against": 4,
+      "goal_diff": 5
     },
     {
       "id": 2,
       "name": "I Choose You, Char-izard",
       "short_name": "YELLOW",
-      "wins": 3,
-      "losses": 4,
-      "ties": 1,
-      "points": 7,
+      "wins": 1,
+      "losses": 2,
+      "ties": 0,
+      "points": 2,
       "games_played": 3,
-      "goals_for": 19,
-      "goals_against": 20,
-      "goal_diff": -1
+      "goals_for": 5,
+      "goals_against": 9,
+      "goal_diff": -4
     },
     {
       "id": 3,
       "name": "Pink Zamboni Club",
       "short_name": "PINK",
-      "wins": 3,
-      "losses": 4,
+      "wins": 2,
+      "losses": 0,
       "ties": 1,
-      "points": 7,
+      "points": 5,
       "games_played": 3,
-      "goals_for": 18,
-      "goals_against": 20,
-      "goal_diff": -2
+      "goals_for": 6,
+      "goals_against": 4,
+      "goal_diff": 2
     },
     {
       "id": 4,
       "name": "Shadow Kirby's Dream Land",
       "short_name": "BLACK",
-      "wins": 2,
-      "losses": 4,
-      "ties": 1,
-      "points": 5,
+      "wins": 0,
+      "losses": 3,
+      "ties": 0,
+      "points": 0,
       "games_played": 3,
-      "goals_for": 16,
-      "goals_against": 23,
-      "goal_diff": -7
+      "goals_for": 4,
+      "goals_against": 7,
+      "goal_diff": -3
     }
   ]
 }
