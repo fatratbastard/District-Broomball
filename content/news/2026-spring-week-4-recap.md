@@ -1,3 +1,9 @@
+---
+title: Week Four Game Recaps
+date: 2025-04-06
+summary: Recap of all of the action from Week 4 of the 2026 Spring Season.
+author: League Commissioner
+---
 **Game 1: Don't Stan So Klos To Me 1, I Choose You, Charizard 4** 
 Eight minutes into the game, Yurasko Jr. one-timed a shot to complete a two-on-one rush into the zone and put Yellow ahead 1-0. Six minutes later, Campbell picked off a Blue clearance and scored from the point to put Yellow up 2-0. Then just before halftime, D. Laux collected a rebound by the right dot and found Yurasko Jr. open in front of the net for another Yellow tally. Early in the second half, Angotti scored the prettiest goal of the night, spinning and scooping a low pass into the top of the net from a tough angle, 4-0. Blue kept even with Yellow for shots on goal in the second half, and midway through the period Leonard shot off the post with the rebound kicking out to Rattey who rifled in a shot to wipe Yellow's shutout bid. 
 
