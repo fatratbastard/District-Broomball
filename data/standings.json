@@ -1,19 +1,6 @@
 {
   "teams": [
     {
-      "id": 1,
-      "name": "Don't Stan So Klos To Me",
-      "short_name": "BLUE",
-      "wins": 2,
-      "losses": 2,
-      "ties": 1,
-      "points": 5,
-      "games_played": 5,
-      "goals_for": 13,
-      "goals_against": 2,
-      "goal_diff": 1
-    },
-    {
       "id": 3,
       "name": "Pink Zamboni Club",
       "short_name": "PINK",
@@ -27,17 +14,17 @@
       "goal_diff": -2
     },
     {
-      "id": 2,
-      "name": "I Choose You, Char-izard",
-      "short_name": "YELLOW",
+      "id": 1,
+      "name": "Don't Stan So Klos To Me",
+      "short_name": "BLUE",
       "wins": 2,
-      "losses": 3,
-      "ties": 0,
-      "points": 4,
+      "losses": 2,
+      "ties": 1,
+      "points": 5,
       "games_played": 5,
-      "goals_for": 10,
-      "goals_against": 16,
-      "goal_diff": -6
+      "goals_for": 13,
+      "goals_against": 2,
+      "goal_diff": 1
     },
     {
       "id": 4,
@@ -51,6 +38,19 @@
       "goals_for": 15,
       "goals_against": 8,
       "goal_diff": 7
+    },
+    {
+      "id": 2,
+      "name": "I Choose You, Char-izard",
+      "short_name": "YELLOW",
+      "wins": 2,
+      "losses": 3,
+      "ties": 0,
+      "points": 4,
+      "games_played": 5,
+      "goals_for": 10,
+      "goals_against": 16,
+      "goal_diff": -6
     }
   ]
 }
