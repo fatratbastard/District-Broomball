@@ -7,9 +7,9 @@ author: League Commissioner
 #Nationals in Minnesota#
 It was a solid weekend for our league's players out in Minneapolis at the National Championships. Notably, the Wicked Sisters and Heroines faced off for the Womens B Championship, and our own Michelle Nudi scored both goals in a 2-0 win for the Wicked Sisters!
 
-[Wicked Sisters](wicked_sisters.jpg)
+![Wicked Sisters](wicked_sisters.jpg)
 
-[Corruption](corruption.jpg)
+![Corruption](corruption.jpg)
 
 Here's the short version of how things went for each team with players from our league: 
 - Bipartisans (co-rec A) -- lost in quarterfinals with an 0-3 record
