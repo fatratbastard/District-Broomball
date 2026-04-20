@@ -5,6 +5,7 @@ summary: Recap of the Baltimore / DC teams at Nationals.
 author: League Commissioner
 ---
 #Nationals in Minnesota#
+
 It was a solid weekend for our league's players out in Minneapolis at the National Championships. Notably, the Wicked Sisters and Heroines faced off for the Womens B Championship, and our own Michelle Nudi scored both goals in a 2-0 win for the Wicked Sisters!
 
 ![Wicked Sisters](wicked_sisters.jpg)
