@@ -1,0 +1,11 @@
+---
+title: Week Seven Game Recaps - Playoffs Round 1
+date: 2025-04-27
+summary: Recap of all of the action from Week 7 of the 2026 Spring Season.
+author: League Commissioner
+---
+**Game 1: Don't Stan So Klos To Me 4, I Choose You, Charizard 3 (OT)** It was a cagey first half. Blue led the way on shots, but the only goal came from Schneider flipping in a saved Angotti shot in transition to put Yellow ahead 1-0. Yellow added another early in the second half, this time with Schneider punching in a blocked Yurasko Jr. attempt. Blue's comeback began with about twelve minutes remaining as Leonard knocked in the ball after Bowman's initial shot was saved. Then on the same shift, Bowman stole the ball and scored to tie the game for Blue, 2-2. And just a minute later, Garrity scored to complete a tic-tac-toe passing sequence with Held and Ault and put Blue ahead 3-2. With six minutes left, Yurasko Sr. one-timed from the mid-slot and his shot snuck just inside the post to tie the game for Yellow, 3-3. The game went into overtime. Four minutes into extra frame, Fletcher stole the ball in Yellow's zone and found Ault open for the winning goal. 
+
+**Game 2: Shadow Kirby's Dream Land 1, Pink Zamboni Club 4** Nine minutes into the late game, Mehter picked off a pass in the neutral zone, found Ulerich open crossing the blue line, and he blasted in a shot to put Pink ahead 1-0. Three minutes later, Sarnell passed to an uncovered Ulerich on the weak side and he again buried a big shot to extend Pink's lead to 2-0. Then just before halftime, Fajman stole the ball and sent it ahead to a streaking Kamphaus who came in alone on net and converted the chance to make it 3-0. Black was even on shots in the first half and generated odd-man rushes throughout the game. With thirteen minutes left in the game, Black finally broke through with a goal from Garrity set up by a good passing sequence in the offensive zone to make it 3-1. But Ulerich halted any momentum gained on the next faceoff, winning the ball forward, splitting the defenders, and shooting on the run to restore Pink's three-goal lead, 4-1. Despite a few late breakaways for Black, that scoreline held the rest of the way.
+
+**Three Stars:** Alex Ault, Joe Ulerich, Brett Schneider
