@@ -1,0 +1,12 @@
+---
+title: Week Seven Game Recaps - Playoffs Finals
+date: 2025-04-30
+summary: Recap of the Spring Season Championship week.
+author: League Commissioner
+---
+
+**Game 1: Don't Stan So Klos To Me 5, Pink Zamboni Club 3** -- Blue scored two minutes into the game, when Getches intercepted a pass in the Pink zone and one-timed it home for an early 1-0 lead. That score held for ten minutes, until a forechecking Ulerich stole the ball at the blue line and ripped in a shot from there to make it 1-1. Blue racked up more shots on goal in the first half, but Pink kept the scoreboard tied going into halftime. Five minutes into the second half, Rattey received a pass at the right point, walked to the top of the circle, and drove home a shot to put Blue ahead 2-1. Ault extended Blue's lead two minutes later when his snap shot on a centering pass from behind the net found the bottom left corner. Fajman answered for Pink on the next shift, rolling a low shot through traffic from the left dot to make it a 3-2 game. Kleven restored Blue's two-goal lead with seven minutes left, stealing the ball in his defensive zone, sprinting the length of the ice, and lifting in a backhand high, 4-2. With one minute remaining, Ulerich picked up the ball in the neutral zone during a Blue line change, fired a shot from mid-ice, and beat the goalie high to bring Pink back within a goal, 4-3. Pink pressed with an extra attacker for the final minute, but the last goal was an empty-netter from Pawlo on a clearance from the back right corner. Don't Stan So Klos To Me are our Winter Champs!
+
+**Game 2: Shadow Kirby's Dream Land 6, I Choose You, Char-izard 1** -- The late game captains decided to play 6-on-6 with no goalies for an added touch of novelty. Early in the game, Bowman stole the ball at the point, ran end-to-end, and scored for a 1-0 Black lead. A few minutes later, L. Kirby stole the ball, rushed into the Yellow zone, and passed to Bowman for a back-door tap-in. Black made it 3-0 after a nice passing sequence found K. Kirby open for a blasted shot. Yellow got one back early in the second half, with Pawlo scoring a hand-pass goal on a breakaway. Bowman scored next, from close range, after K. Kirby drew multiple defenders before slipping a pass through. Bowman was in the right place again to knock home the rebound after a K. Kirby shot hit the post. In the final minute, K. Kirby found an open window and scored from the blue line to make 6-1 for Black.
+
+**Three Stars:** Adam Kleven, Connor Rattey, John Bowman
