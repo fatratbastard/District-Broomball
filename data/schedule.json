@@ -174,9 +174,9 @@
       "time": "21:00",
       "home_team": "Pink Zamboni Club",
       "away_team": "Don't Stan So Klos To Me",
-      "home_score": null,
-      "away_score": null,
-      "status": "scheduled",
+      "home_score": 3,
+      "away_score": 5,
+      "status": "completed",
       "location": "Tucker Road Rink",
       "notes": ""
     },
@@ -186,11 +186,11 @@
       "time": "21:45",
       "home_team": "Shadow Kirby's Dream Land",
       "away_team": "I Choose You, Char-izard",
-      "home_score": null,
-      "away_score": null,
-      "status": "scheduled",
+      "home_score": 6,
+      "away_score": 1,
+      "status": "completed",
       "location": "Tucker Road Rink",
-      "notes": ""
+      "notes": "No goalies, 6 runners on the ice"
     }
   ]
 }
