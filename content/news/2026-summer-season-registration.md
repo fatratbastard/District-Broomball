@@ -1,7 +1,7 @@
 ---
 title: Summer Season Registration
 date: 2025-04-27
-summary: Recap of all of the action from Week 7 of the 2026 Spring Season.
+summary: Summer 2026 Season Registration is now open.
 author: League Commissioner
 ---
 
