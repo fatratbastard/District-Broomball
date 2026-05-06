@@ -1,5 +1,5 @@
 ---
-title: Week Seven Game Recaps - Playoffs Finals
+title: Week Eight Game Recaps - Playoffs Finals
 date: 2025-04-30
 summary: Recap of the Spring Season Championship week.
 author: League Commissioner
