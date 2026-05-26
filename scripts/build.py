@@ -397,6 +397,109 @@ def generate_alltime_stats(cur: sqlite3.Cursor) -> None:
 
 
 # ---------------------------------------------------------------------------
+# History
+# ---------------------------------------------------------------------------
+
+def generate_history(cur: sqlite3.Cursor, current_season_id: int) -> None:
+    print("Generating history data...")
+    history_dir = os.path.join(CONTENT_DIR, 'history')
+    os.makedirs(history_dir, exist_ok=True)
+
+    for fn in os.listdir(history_dir):
+        if fn != '_index.md' and fn.endswith('.md'):
+            os.remove(os.path.join(history_dir, fn))
+
+    team_names = {
+        row[0]: row[1]
+        for row in cur.execute("SELECT id, name FROM teams").fetchall()
+    }
+
+    past_seasons = cur.execute("""
+        SELECT id, name FROM seasons
+        WHERE is_current = 0
+        ORDER BY id DESC
+    """).fetchall()
+
+    history: dict = {'seasons': []}
+
+    for sid, sname in past_seasons:
+        slug = slugify(sname)
+        standings = compute_standings(cur, sid)
+        champion = standings[0]['name'] if standings else ''
+
+        gp_map = {
+            pid: gp
+            for pid, gp in cur.execute("""
+                SELECT pgs.player_id, COUNT(DISTINCT pgs.game_id)
+                FROM player_game_stats pgs
+                JOIN games g ON g.id = pgs.game_id
+                WHERE g.season_id = ?
+                GROUP BY pgs.player_id
+            """, (sid,)).fetchall()
+        }
+
+        player_rows = cur.execute("""
+            SELECT p.id, p.first_name, p.last_name,
+                   COALESCE(SUM(pgs.goals), 0)           AS goals,
+                   COALESCE(SUM(pgs.assists), 0)         AS assists,
+                   COALESCE(SUM(pgs.penalty_minutes), 0) AS pim
+            FROM players p
+            JOIN player_game_stats pgs ON pgs.player_id = p.id
+            JOIN games g ON g.id = pgs.game_id
+            WHERE g.season_id = ?
+            GROUP BY p.id
+            HAVING goals + assists > 0
+        """, (sid,)).fetchall()
+        player_rows = sorted(player_rows, key=lambda r: (-(r[3] + r[4]), -r[3]))
+
+        players = []
+        for rank, (pid, fn, ln, g, a, pim) in enumerate(player_rows, start=1):
+            gp = gp_map.get(pid, 0)
+            pts = g + a
+            ppg = round(pts / gp, 2) if gp else 0.0
+            players.append({
+                'rank':            rank,
+                'name':            f'{fn} {ln}',
+                'games_played':    gp,
+                'goals':           g,
+                'assists':         a,
+                'points':          pts,
+                'points_per_game': f'{ppg:.2f}',
+                'penalty_minutes': pim,
+            })
+
+        games_played = cur.execute("""
+            SELECT COUNT(*) FROM games
+            WHERE season_id = ? AND status = 'completed'
+        """, (sid,)).fetchone()[0]
+
+        history['seasons'].append({
+            'slug':           slug,
+            'season':         sname,
+            'champion':       champion,
+            'games_played':   games_played,
+            'top_scorer':     players[0]['name'] if players else '',
+            'top_scorer_pts': players[0]['points'] if players else 0,
+        })
+
+        history[slug] = {
+            'season':       sname,
+            'champion':     champion,
+            'games_played': games_played,
+            'standings':    standings,
+            'players':      players,
+        }
+
+        write_markdown(
+            os.path.join(history_dir, f'{slug}.md'),
+            {'title': sname, 'slug': slug},
+            '',
+        )
+
+    write_json(os.path.join(DATA_DIR, 'history.json'), history)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -443,6 +546,7 @@ def main() -> None:
     generate_schedule(cur, season_id)
     generate_season_stats(cur, season_id)
     generate_alltime_stats(cur)
+    generate_history(cur, season_id)
 
     conn.close()
     print("Content and data files generated.")

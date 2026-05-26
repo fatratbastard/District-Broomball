@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="container py-4">
+  <div class="page-header mb-4">
+    <h1><i class="bi bi-clock-history"></i> History</h1>
+    <p class="text-muted">{{ .Description }}</p>
+  </div>
+
+  {{ with .Site.Data.history }}
+  {{ if .seasons }}
+  <div class="table-responsive">
+    <table class="table table-hover standings-table-full">
+      <thead>
+        <tr>
+          <th>Season</th>
+          <th>Champion</th>
+          <th class="text-center">Games Played</th>
+          <th>Top Scorer</th>
+          <th class="text-center">PTS</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .seasons }}
+        <tr>
+          <td class="fw-medium">{{ .season }}</td>
+          <td>
+            {{ if .champion }}
+            <i class="bi bi-trophy-fill text-warning"></i> {{ .champion }}
+            {{ else }}
+            <span class="text-muted">—</span>
+            {{ end }}
+          </td>
+          <td class="text-center text-muted">{{ .games_played }}</td>
+          <td>{{ .top_scorer }}</td>
+          <td class="text-center fw-bold points-cell">{{ if .top_scorer_pts }}{{ .top_scorer_pts }}{{ else }}—{{ end }}</td>
+          <td><a href="{{ "/history/" | relURL }}{{ .slug }}/" class="btn btn-sm btn-outline-primary">View Results</a></td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+  {{ else }}
+  <div class="alert alert-info">
+    <i class="bi bi-info-circle"></i> No past seasons found. Run the build script to populate from the database.
+  </div>
+  {{ end }}
+  {{ else }}
+  <div class="alert alert-info">
+    <i class="bi bi-info-circle"></i> No past seasons found. Run the build script to populate from the database.
+  </div>
+  {{ end }}
+</div>
+{{ end }}

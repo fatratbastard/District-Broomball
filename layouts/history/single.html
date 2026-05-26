@@ -1,0 +1,111 @@
+{{ define "main" }}
+<div class="container py-4">
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ "/" | relURL }}">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ "/history/" | relURL }}">History</a></li>
+      <li class="breadcrumb-item active">{{ .Title }}</li>
+    </ol>
+  </nav>
+
+  {{ $data := index .Site.Data.history .Params.slug }}
+  {{ with $data }}
+
+  <div class="page-header mb-4">
+    <h1><i class="bi bi-calendar3-range"></i> {{ .season }}</h1>
+    {{ if .champion }}
+    <p class="text-muted"><i class="bi bi-trophy-fill text-warning"></i> Champion: <strong>{{ .champion }}</strong></p>
+    {{ end }}
+  </div>
+
+  <!-- Final Standings -->
+  {{ with .standings }}
+  <section class="mb-5">
+    <h2 class="section-title mb-3"><i class="bi bi-trophy"></i> Final Standings</h2>
+    <div class="table-responsive">
+      <table class="table table-hover standings-table-full">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Team</th>
+            <th class="text-center">GP</th>
+            <th class="text-center">W</th>
+            <th class="text-center">L</th>
+            <th class="text-center">T</th>
+            <th class="text-center">GF</th>
+            <th class="text-center">GA</th>
+            <th class="text-center">DIFF</th>
+            <th class="text-center">PTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $i, $team := . }}
+          <tr{{ if eq $i 0 }} class="table-warning"{{ end }}>
+            <td class="text-muted">{{ add $i 1 }}</td>
+            <td class="fw-medium">
+              {{ if eq $i 0 }}<i class="bi bi-trophy-fill text-warning me-1"></i>{{ end }}
+              {{ $team.name }}
+            </td>
+            <td class="text-center">{{ $team.games_played }}</td>
+            <td class="text-center">{{ $team.wins }}</td>
+            <td class="text-center">{{ $team.losses }}</td>
+            <td class="text-center">{{ $team.ties }}</td>
+            <td class="text-center">{{ $team.goals_for }}</td>
+            <td class="text-center">{{ $team.goals_against }}</td>
+            <td class="text-center {{ if gt $team.goal_diff 0 }}text-success{{ else if lt $team.goal_diff 0 }}text-danger{{ end }}">
+              {{ if gt $team.goal_diff 0 }}+{{ end }}{{ $team.goal_diff }}
+            </td>
+            <td class="text-center fw-bold points-cell">{{ $team.points }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-muted small mt-1">W=2pts &bull; T=1pt &bull; L=0pts</p>
+  </section>
+  {{ end }}
+
+  <!-- Scoring Leaders -->
+  {{ with .players }}
+  <section class="mb-5">
+    <h2 class="section-title mb-3"><i class="bi bi-person-lines-fill"></i> Scoring Leaders</h2>
+    <div class="table-responsive">
+      <table class="table table-hover stats-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Player</th>
+            <th class="text-center">GP</th>
+            <th class="text-center">G</th>
+            <th class="text-center">A</th>
+            <th class="text-center">PTS</th>
+            <th class="text-center">PTS/G</th>
+            <th class="text-center">PIM</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td class="text-muted">{{ .rank }}</td>
+            <td class="fw-medium">{{ .name }}</td>
+            <td class="text-center">{{ .games_played }}</td>
+            <td class="text-center">{{ .goals }}</td>
+            <td class="text-center">{{ .assists }}</td>
+            <td class="text-center fw-bold points-cell">{{ .points }}</td>
+            <td class="text-center text-muted small">{{ .points_per_game }}</td>
+            <td class="text-center text-muted">{{ .penalty_minutes }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ else }}
+  <div class="alert alert-warning">
+    <i class="bi bi-exclamation-triangle"></i> Season data not found. Run the build script to regenerate.
+  </div>
+  {{ end }}
+</div>
+{{ end }}

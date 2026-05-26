@@ -1,0 +1,307 @@
+{
+  "seasons": [
+    {
+      "slug": "winter-2024-2025",
+      "season": "Winter 2024-2025",
+      "champion": "Polar Bears",
+      "games_played": 18,
+      "top_scorer": "",
+      "top_scorer_pts": 0
+    },
+    {
+      "slug": "winter-2023-2024",
+      "season": "Winter 2023-2024",
+      "champion": "Polar Bears",
+      "games_played": 17,
+      "top_scorer": "Robin Chaudhary",
+      "top_scorer_pts": 15
+    }
+  ],
+  "winter-2024-2025": {
+    "season": "Winter 2024-2025",
+    "champion": "Polar Bears",
+    "games_played": 18,
+    "standings": [
+      {
+        "id": 1,
+        "name": "Polar Bears",
+        "short_name": "POL",
+        "wins": 7,
+        "losses": 0,
+        "ties": 0,
+        "points": 14,
+        "games_played": 7,
+        "goals_for": 26,
+        "goals_against": 13,
+        "goal_diff": 13
+      },
+      {
+        "id": 2,
+        "name": "Ice Storm",
+        "short_name": "ICE",
+        "wins": 4,
+        "losses": 2,
+        "ties": 1,
+        "points": 9,
+        "games_played": 7,
+        "goals_for": 22,
+        "goals_against": 17,
+        "goal_diff": 5
+      },
+      {
+        "id": 5,
+        "name": "Arctic Wolves",
+        "short_name": "ARW",
+        "wins": 3,
+        "losses": 5,
+        "ties": 0,
+        "points": 6,
+        "games_played": 8,
+        "goals_for": 16,
+        "goals_against": 20,
+        "goal_diff": -4
+      },
+      {
+        "id": 3,
+        "name": "Frozen Few",
+        "short_name": "FRZ",
+        "wins": 2,
+        "losses": 4,
+        "ties": 1,
+        "points": 5,
+        "games_played": 7,
+        "goals_for": 16,
+        "goals_against": 17,
+        "goal_diff": -1
+      },
+      {
+        "id": 4,
+        "name": "Cold Fronts",
+        "short_name": "CFR",
+        "wins": 1,
+        "losses": 6,
+        "ties": 0,
+        "points": 2,
+        "games_played": 7,
+        "goals_for": 11,
+        "goals_against": 24,
+        "goal_diff": -13
+      }
+    ],
+    "players": []
+  },
+  "winter-2023-2024": {
+    "season": "Winter 2023-2024",
+    "champion": "Polar Bears",
+    "games_played": 17,
+    "standings": [
+      {
+        "id": 1,
+        "name": "Polar Bears",
+        "short_name": "POL",
+        "wins": 7,
+        "losses": 0,
+        "ties": 0,
+        "points": 14,
+        "games_played": 7,
+        "goals_for": 25,
+        "goals_against": 12,
+        "goal_diff": 13
+      },
+      {
+        "id": 2,
+        "name": "Ice Storm",
+        "short_name": "ICE",
+        "wins": 3,
+        "losses": 2,
+        "ties": 2,
+        "points": 8,
+        "games_played": 7,
+        "goals_for": 18,
+        "goals_against": 16,
+        "goal_diff": 2
+      },
+      {
+        "id": 5,
+        "name": "Arctic Wolves",
+        "short_name": "ARW",
+        "wins": 3,
+        "losses": 3,
+        "ties": 1,
+        "points": 7,
+        "games_played": 7,
+        "goals_for": 17,
+        "goals_against": 17,
+        "goal_diff": 0
+      },
+      {
+        "id": 3,
+        "name": "Frozen Few",
+        "short_name": "FRZ",
+        "wins": 2,
+        "losses": 4,
+        "ties": 1,
+        "points": 5,
+        "games_played": 7,
+        "goals_for": 18,
+        "goals_against": 20,
+        "goal_diff": -2
+      },
+      {
+        "id": 4,
+        "name": "Cold Fronts",
+        "short_name": "CFR",
+        "wins": 0,
+        "losses": 6,
+        "ties": 0,
+        "points": 0,
+        "games_played": 6,
+        "goals_for": 8,
+        "goals_against": 21,
+        "goal_diff": -13
+      }
+    ],
+    "players": [
+      {
+        "rank": 1,
+        "name": "Robin Chaudhary",
+        "games_played": 7,
+        "goals": 8,
+        "assists": 7,
+        "points": 15,
+        "points_per_game": "2.14",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 2,
+        "name": "Sarah Kowalski",
+        "games_played": 7,
+        "goals": 6,
+        "assists": 9,
+        "points": 15,
+        "points_per_game": "2.14",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 3,
+        "name": "Nadia Volkov",
+        "games_played": 7,
+        "goals": 6,
+        "assists": 7,
+        "points": 13,
+        "points_per_game": "1.86",
+        "penalty_minutes": 0
+      },
+      {
+        "rank": 4,
+        "name": "Quinn Delacroix",
+        "games_played": 7,
+        "goals": 7,
+        "assists": 5,
+        "points": 12,
+        "points_per_game": "1.71",
+        "penalty_minutes": 4
+      },
+      {
+        "rank": 5,
+        "name": "Parker Hristov",
+        "games_played": 7,
+        "goals": 7,
+        "assists": 5,
+        "points": 12,
+        "points_per_game": "1.71",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 6,
+        "name": "Alex Bourassa",
+        "games_played": 7,
+        "goals": 5,
+        "assists": 7,
+        "points": 12,
+        "points_per_game": "1.71",
+        "penalty_minutes": 4
+      },
+      {
+        "rank": 7,
+        "name": "Marcus Thibodeau",
+        "games_played": 7,
+        "goals": 6,
+        "assists": 4,
+        "points": 10,
+        "points_per_game": "1.43",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 8,
+        "name": "Priya Mehta",
+        "games_played": 7,
+        "goals": 5,
+        "assists": 5,
+        "points": 10,
+        "points_per_game": "1.43",
+        "penalty_minutes": 4
+      },
+      {
+        "rank": 9,
+        "name": "Casey Fontaine",
+        "games_played": 7,
+        "goals": 3,
+        "assists": 7,
+        "points": 10,
+        "points_per_game": "1.43",
+        "penalty_minutes": 0
+      },
+      {
+        "rank": 10,
+        "name": "Chris Watanabe",
+        "games_played": 6,
+        "goals": 2,
+        "assists": 8,
+        "points": 10,
+        "points_per_game": "1.67",
+        "penalty_minutes": 0
+      },
+      {
+        "rank": 11,
+        "name": "Tyler Bergstrom",
+        "games_played": 7,
+        "goals": 4,
+        "assists": 4,
+        "points": 8,
+        "points_per_game": "1.14",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 12,
+        "name": "Sam Oduya",
+        "games_played": 7,
+        "goals": 4,
+        "assists": 4,
+        "points": 8,
+        "points_per_game": "1.14",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 13,
+        "name": "Taylor Novak",
+        "games_played": 6,
+        "goals": 5,
+        "assists": 2,
+        "points": 7,
+        "points_per_game": "1.17",
+        "penalty_minutes": 2
+      },
+      {
+        "rank": 14,
+        "name": "Logan Beaumont",
+        "games_played": 7,
+        "goals": 3,
+        "assists": 4,
+        "points": 7,
+        "points_per_game": "1.00",
+        "penalty_minutes": 2
+      }
+    ]
+  }
+}

@@ -5,9 +5,9 @@ summary: How the season schedule and playoffs work.
 ---
 ## Regular Season
 
-The regular season consists of a full round-robin schedule, with each team playing every other team multiple times. All games are played at Tucker Road Ice Rink.
+The regular season consists of a full round-robin schedule, with each team playing every other team multiple times. All games are played at the Rideau Rink.
 
-**Typical game nights:** Tuesday evenings, with games at 9:00 PM and 9:45 PM, or 9:30 PM and 10:15 PM.
+**Typical game nights:** Monday evenings, with games at 8:00 PM and 9:30 PM.
 
 ## Standings & Tiebreakers
 
@@ -21,10 +21,19 @@ Playoff seeding is determined by the following, in order:
 
 ## Playoffs
 
-All teams qualify for the playoffs. If it is a four team season then the following format is used:
+The top four teams qualify for the playoffs, which are held in the final two weeks of March. The playoff format is single elimination:
+
 - **Semifinals:** 1st vs 4th seed, 2nd vs 3rd seed
 - **Championship Final:** Top two semifinal winners
 
-If its a 3 or 5 team season then the playoff format will be communicated to all participants at the beginning of the season.
+Playoff overtime rules: full 10-minute periods are played until a goal is scored. There are no shootouts.
 
-Playoff overtime rules: 5-minute 4 on 4 with no goalies. First goal wins. If still tied after 5 minutes then 3 on 3.
+## Awards
+
+At the season-closing banquet, the following awards are presented:
+
+- **Championship Trophy** — winning team
+- **Scoring Champion** — most regular-season points
+- **Most Valuable Player** — voted by players and league staff
+- **Best Goalie** — lowest goals-against average (minimum 8 games played)
+- **Sportsmanship Award** — voted by players
