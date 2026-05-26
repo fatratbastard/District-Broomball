@@ -2,7 +2,6 @@
   "teams": [
     {
       "id": 1,
-<<<<<<< HEAD
       "name": "Don't Stan So Klos To Me",
       "short_name": "BLUE",
       "wins": 4,
@@ -115,7 +114,6 @@
       "goals_for": 16,
       "goals_against": 28,
       "goal_diff": -12
->>>>>>> a802503 (Add History section with per-season results and standings)
     }
   ]
 }
