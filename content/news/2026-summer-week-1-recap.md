@@ -1,5 +1,5 @@
 ---
-title: Week One GameRecaps
+title: Week One Game Recaps
 date: 2026-06-01
 summary: Recap of all of the action from Week 1 of the 2026 Summer Season.
 author: League Commissioner
