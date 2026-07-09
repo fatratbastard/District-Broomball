@@ -1,6 +1,6 @@
 ---
 title: Week Five Game Recaps
-date: 2026-06-22
+date: 2026-06-29
 summary: Recap of all of the action from Week 5 of the 2026 Summer Season.
 author: League Commissioner
 ---
