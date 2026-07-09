@@ -1,6 +1,6 @@
 ---
 title: Week One GameRecaps
-date: 2025-03-16
+date: 2026-03-16
 summary: Recap of all of the action from Week 1 of the 2026 Spring Season.
 author: League Commissioner
 ---

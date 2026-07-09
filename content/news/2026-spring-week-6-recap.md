@@ -1,6 +1,6 @@
 ---
 title: Week Six Game Recaps
-date: 2025-04-20
+date: 2026-04-20
 summary: Recap of all of the action from Week 6 of the 2026 Spring Season.
 author: League Commissioner
 ---

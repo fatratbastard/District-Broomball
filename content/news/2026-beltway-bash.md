@@ -1,6 +1,6 @@
 ---
 title: 2026 Beltway Broomball Bash
-date: 2025-03-17
+date: 2026-03-17
 summary: Sign up for this year's Beltway Broomball Bash!
 author: League Commissioner
 ---

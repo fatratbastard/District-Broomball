@@ -1,6 +1,6 @@
 ---
 title: End of Season Social
-date: 2025-04-13
+date: 2026-04-13
 summary: Come join us for an end of season social at Kenilworth Aquatic Gardens on May 2nd.
 author: League Commissioner
 ---

@@ -1,6 +1,6 @@
 ---
 title: Week Seven Game Recaps - Playoffs Round 1
-date: 2025-04-27
+date: 2026-04-27
 summary: Recap of all of the action from Week 7 of the 2026 Spring Season.
 author: League Commissioner
 ---

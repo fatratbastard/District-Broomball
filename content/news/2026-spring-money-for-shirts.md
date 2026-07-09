@@ -1,6 +1,6 @@
 ---
 title: Money for Shirts
-date: 2025-03-30
+date: 2026-03-30
 summary: If you haven't paid for your league shirts...
 author: League Commissioner
 ---

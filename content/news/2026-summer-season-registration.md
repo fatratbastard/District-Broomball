@@ -1,6 +1,6 @@
 ---
 title: Summer Season Registration
-date: 2025-04-27
+date: 2026-04-27
 summary: Summer 2026 Season Registration is now open.
 author: League Commissioner
 ---

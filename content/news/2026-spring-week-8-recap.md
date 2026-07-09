@@ -1,6 +1,6 @@
 ---
 title: Week Eight Game Recaps - Playoffs Finals
-date: 2025-04-30
+date: 2026-04-30
 summary: Recap of the Spring Season Championship week.
 author: League Commissioner
 ---

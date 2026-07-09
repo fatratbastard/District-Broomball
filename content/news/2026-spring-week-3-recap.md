@@ -1,6 +1,6 @@
 ---
 title: Week Three Game Recaps
-date: 2025-03-30
+date: 2026-03-30
 summary: Recap of all of the action from Week 3 of the 2026 Spring Season.
 author: League Commissioner
 ---

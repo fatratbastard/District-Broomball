@@ -1,6 +1,6 @@
 ---
 title: Week Four Game Recaps
-date: 2025-04-06
+date: 2026-04-06
 summary: Recap of all of the action from Week 4 of the 2026 Spring Season.
 author: League Commissioner
 ---

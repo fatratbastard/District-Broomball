@@ -1,6 +1,6 @@
 ---
 title: Week Five Game Recaps
-date: 2025-04-13
+date: 2026-04-13
 summary: Recap of all of the action from Week 5 of the 2026 Spring Season.
 author: League Commissioner
 ---

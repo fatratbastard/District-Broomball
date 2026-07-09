@@ -1,6 +1,6 @@
 ---
 title: 2026 Nationals Results
-date: 2025-04-20
+date: 2026-04-20
 summary: Recap of the Baltimore / DC teams at Nationals.
 author: League Commissioner
 ---

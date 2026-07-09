@@ -1,6 +1,6 @@
 ---
 title: Nationals in Minnesota
-date: 2025-04-13
+date: 2026-04-13
 summary: Information about 2026 Broomball Nationals and the League players who will be participating.
 author: League Commissioner
 ---
